@@ -16,21 +16,21 @@ const Weather = () => {
         setInput(event.target.value)
     };
     return(
-        <div>
+        <div id='main'>
             <div>
-          <h2>Rayn</h2> 
-          <input placeholder='Enter city name' type='text' value={inputValue} onChange={handleInput}></input>
-          <button type='click'>search</button>
+          <h2 id='name'>Rayn</h2> <input placeholder='Enter city name' type='text' value={inputValue} onChange={handleInput} id='searchBar'></input>
+          <button type='click' id='searchButton'>search</button>
           </div> 
           <div>
-            <img src='/images/sunset.jpg'/>
+            <img src='/images/sunset.jpg' className='img'/>
           </div>
           <div>
-            <div>
-
+            <div id='weatherInfo'>
+          <div></div>
+          <div></div>
             </div>
             <div>
-              
+            
             </div>
           </div>
         </div>
